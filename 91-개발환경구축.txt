@@ -1,0 +1,10 @@
+
+[참조] https://yamoo9.gitbook.io/typescript/cli-env/tsconfig
+
+1. tsc --init
+tsconfig.json 파일 생성됨
+
+2. root폴더에 src 폴더, dist 폴더를 생성한다. 
+
+3. 아래와 같이 tsconfig.json 파일을 편집한다.  
+

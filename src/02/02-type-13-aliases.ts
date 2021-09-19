@@ -1,0 +1,20 @@
+
+//-----------------------------------------
+// Type Aliases
+//-----------------------------------------
+{
+    type alphanumberic = string | number
+
+    function add2(a: alphanumberic, b: alphanumberic) {
+        if (typeof a === 'number' && typeof b === 'number') {
+            return a + b
+        }
+        if (typeof a === 'string' && typeof b === 'string') {
+            return a.concat(b)
+        }
+        throw new Error('Parameters must be numbers or strings')
+    }
+    
+    console.log(add2(1, 2)) // 3
+    console.log(add2('egg', ' slot')) // egg slot
+}
